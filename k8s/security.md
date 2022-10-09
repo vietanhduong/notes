@@ -1,6 +1,6 @@
 # Kubernetes Security Notes
 
-## Rulesets
+## Operator Rulesets
 
 | RuleSet ID | Rule | Risk | Risk Level |
 |-----|-----|-----|-----|
