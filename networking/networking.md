@@ -41,7 +41,7 @@ This duplicate acknowledgement is used as a signal for packet loss.
 Client          Server
   | <-----Seg 1---- |
   | ------ACK 2---> |
-  |   X <-Seg 2 ----|
+  |   X <-Seg 2---- |
   | <-----Seg 3---- |
   | <-----Seg 4---- |
   | ------ACK 2---> |
@@ -57,13 +57,13 @@ This design is inefficient because, although only packet #2 was lost, the server
 And that's how the Selective Acknowledgments come in.
 
 ### Selective Acknowledgments (SACKs)
-SACKs work by appending to a duplicate acknowledgment packet a TCO option containing a range of noncontiguous data received. In other words, it allows the client to say "I only have up to packet #1 in order, but I also have received packets #3 and #4". This allow the server to retransmit only the packet(s) that were not received by the client.
+SACKs work by appending to a duplicate acknowledgment packet a TCP option containing a range of noncontiguous data received. In other words, it allows the client to say "I only have up to packet #1 in order, but I also have received packets #3 and #4". This allow the server to retransmit only the packet(s) that were not received by the client.
 
 ```text
 Client          Server
   | <-----Seg 1---- |
   | ------ACK 2---> |
-  |   X <-Seg 2 ----|
+  |   X <-Seg 2---- |
   | <-----Seg 3---- |
   | <-----Seg 4---- |
   | ------ACK 2---> |
