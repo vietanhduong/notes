@@ -1,29 +1,4 @@
 ## Kernal Tracing With eBPF
-
-Jeff and Andy, security consultants, discuss eBPF, a bytecode and VM designed to process network packets efficiently in the Linux kernel.
-
-[00:23](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=23) EBPF is a powerful technology for kernel tracing and dynamic instrumentation in Linux.
-
-[06:55](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=415) EBPF is a tracing technology that allows hooking instructions in the kernel and provides a fast ring buffer for copying data from the kernel to user space
-
-[12:49](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=769) Print K is a trace print considered harmful due to shared log buffer and potential race conditions.
-
-[18:19](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=1099) The code discusses a flag called current CPU identifier and its usage in pulling objects from an array.
-
-[23:22](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=1402) Be careful when implementing kernel code to avoid vulnerabilities and ensure compatibility
-
-[28:21](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=1701) BPF can be used for security monitoring tasks
-
-[35:01](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=2101) Writing security-related code is difficult and requires careful consideration.
-
-[41:14](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=2474) The script demonstrates a technique to inject a root command into crontab using EBP F.
-
-[46:35](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=2795) EB PF allows preventing processes from interacting with the kernel and phoning home.
-
-[51:59](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=3119) Implementing protection against script injection and unauthorized access
-
----------------------------------
-
 Detailed Summary for [35C3 -  Kernel Tracing With eBPF](https://www.youtube.com/watch?v=2lbtr85Yrs4) by [Merlin](https://merlin.foyer.work/)
 
 [00:23](https://www.youtube.com/watch?v=2lbtr85Yrs4&t=23) EBPF is a powerful technology for kernel tracing and dynamic instrumentation in Linux.
